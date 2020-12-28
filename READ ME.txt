@@ -1,0 +1,71 @@
+Name: Dziedzorm Duke Kwame Benson
+Contact: ddkbenson@gmail.com
+
+ABOUT APP:
+
+I call this the DukeApp Payroll Management System. This is currently not the finished product. This would be updated as and when necessary.
+
+The app helps to compute employee salary and associated obligatory taxes. The app takes in the ff entries:
+Employee ID, TIN Number, SSNIT Number, Employee First & Last Names, Position and Hire Date. It also takes in the Basic Salary and Allowances if any.
+
+The app then computes the Basic and Allowances to Obtain he ff:
+Gross Salary, Net Salary, Employer SSNIT Contributions on behalf of employee (Tier 1), Employee Contributions (Tier 2), Pay As You Earn Tax (PAYE) and Pay Cost.
+
+After computation, the entry is saved into a CSV file for later retrieval. The entry can also be printed to a txt file and saved or sent to the employee.
+
+SCOPE:
+This current system can compute salaries and tax liabilities, save data, search data, delete data, clear fields and print data. The procedures for each action are shown below.
+
+PROCEDURE:
+
+A. Compute
+1. User makes entry for ID to Allowances.
+2. Then Click compute to populate the fields from Gross salary to Paycost. 
+3. User can then Save, Print or Clear fields
+
+B. Save
+1. User desires to save a new entry.
+2. User follows steps 1 & 2 in Compute (above)
+3. After Computing, click Save.
+4. A CSV file is generated in the location of the python file.
+5. The data in the fields is saved into the CSV file.
+
+C. Clear
+1. This clears all entries within the field.
+
+D. Search
+1. Employee ID serves as the Key.
+2. Employee ID entered.
+3. Click Search.
+4. When results are found, it displays into the appropriate fields.
+5. When ID not found, it prompts user. (This would be added subsequently).
+
+E. Print
+1. User follows steps 1 & 2 in Compute
+2. Click Print to print to text file 
+3. Text file is saved with the First name of employee.
+4. OR 
+5. User follows steps 2 & 3 in Search
+6. When results found, click Print to print to text file.
+7. Text file is saved with the First name of employee.
+
+UPDATES to be MADE
+(The order of arrangement isn't signficant)
+1. When user clicks save and there's no value in the fields, there should be an error prompt.
+
+2. When user clicks compute and the content in basic and allowance fields are not figures, prompt user to enter figures.
+
+3. When date is not in the format dd/mm/yyyy, prompt user. The Hire date field will be upgraded into a QdateEdit, instead of QlineEdit.
+
+4. When Delete is clicked, user will be asked to confirm deletion.
+
+5. Output file would be changed to a PDF.
+
+6. An SQL variant will be considered for the database instead of CSV. Then for each month, an updated Payroll will be generated.
+
+7. Summary calculations will be done for all the salary and tax fields.
+
+8. A button for update will be included in order to update an existing entry.
+
+
+Last updated by Duke Benson - 26/12/2020
